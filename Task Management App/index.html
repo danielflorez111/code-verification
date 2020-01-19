@@ -14,10 +14,35 @@
 
 <body>
 
-    <div class="ui raised very padded text container segment">
-        <h2 class="ui header">Task Management App</h2>
-        <p></p>
-        <p></p>
+    <div class="main-container">
+        <div class="ui container">
+            <h2 class="ui header">Task Management App</h2>
+            <div class="ui form">
+                <div class="three fields">
+                    <div class="field">
+                        <label>Task</label>
+                        <input id="task-name" type="text" placeholder="Task" required>
+                    </div>
+                    <div class="field">
+                        <label>Priority</label>
+                        <select id="task-priority">
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label>Deadline</label>
+                        <input id="task-deadline" type="date" placeholder="Deadline" required>
+                    </div>
+                </div>
+                <button id="add-task-button" class="ui positive basic button" type="button">Save</button>
+                <button id="update-task-button" class="ui positive basic button" type="button">Update</button>
+                <button id="cancel-task-button" class="ui negative basic button" type="button">Cancel</button>
+            </div>
+            <h3 class="ui header">Task List</h3>
+            <div id="task-list" class="ui middle aligned animated list"></div>
+        </div>
     </div>
 
     <script src="js/main.js"></script>
