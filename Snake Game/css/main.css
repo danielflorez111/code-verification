@@ -1,1 +1,28 @@
- /* write your style definitions here or create css files and include them here *?
+body {
+    font-family: monospace;
+}
+
+#canvas {
+    border: 3px solid blue;
+}
+
+#play-again-button {
+    display: none;
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#game-over-message {
+    visibility: hidden;
+    color: red;
+}
+
+h1, h2 {
+    margin: 0;
+}
